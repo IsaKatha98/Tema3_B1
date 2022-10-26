@@ -46,8 +46,6 @@ public class Ejercicio3 {
 		//Por último, cerramos el escáner.
 			
 		sc.close();
-
-
 	}
 
 }
