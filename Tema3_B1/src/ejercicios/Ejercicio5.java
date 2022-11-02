@@ -9,7 +9,7 @@ public class Ejercicio5 {
 		//Declaramos variables
 		
 		int num; //Variable introducida por el usuario.
-		int contadorTotal=1;//Variable contador de los números introducidos por el usuario.
+		int contadorTotal=0;//Variable contador de los números introducidos por el usuario.
 		int sumaPositivos=0;//Variable suma de los números positivos.
 		int sumaNegativos=0;//Varibale suma de los números negativos, utilizada para hacer la media.
 		int contadorNegativos=0;//Variable contador de los números negativos introducidos, utilizada para la media.
@@ -23,9 +23,8 @@ public class Ejercicio5 {
 		
 		//Instrucciones
 			
-		while (contadorTotal<11) {	//Aquí el bucle empezará contando la cantidad de veces que puede introducirse un número.
+		while (contadorTotal<10) {	//Aquí el bucle empezará contando la cantidad de veces que puede introducirse un número.
 			
-			contadorTotal++;
 			
 			System.out.print("Introduzca otro número y pulse Intro: "); //Le pediremos al usuario que introduzca los datos y los guardaremos en la variable.
 			num=sc.nextInt();
@@ -42,15 +41,16 @@ public class Ejercicio5 {
 				
 				sumaNegativos+=num;		//Se suman los números negativos introducidos.
 				contadorNegativos++;	//Se cuentan la cantidad de números negativos introducidos.
-				
-				mediaNegativos= (double) sumaNegativos/(double) contadorNegativos; 	//Se hace la media de los números negativos-
-				
-			}		
+			}	
+			
+			contadorTotal++;
 		}
 		
 			
 		System.out.println("La suma de los números positivos introducidos es: "+sumaPositivos);
 			
+		mediaNegativos= (double) sumaNegativos/(double) contadorNegativos; 	//Se hace la media de los números negativos.
+		
 		System.out.println("La media de los números negativos es: "+mediaNegativos);
 			
 		System.out.println("La cantidad de 0 introducidos es: "+contadorCeros);
