@@ -1,3 +1,4 @@
+
 package ejercicios;
 
 import java.util.Scanner;
@@ -32,8 +33,8 @@ public class Ejercicio7 {
 		
 		} else if (respuesta<random) {
 		
-		System.out.print("El número secreto es mayor que "+respuesta+". Pruebe otra vez: ");
-		respuesta=sc.nextInt();
+			System.out.print("El número secreto es mayor que "+respuesta+". Pruebe otra vez: ");
+			respuesta=sc.nextInt();
 		
 		} else {
 			
@@ -42,8 +43,9 @@ public class Ejercicio7 {
 		
 		}
 	
-	System.out.println("Game over");
+	//System.out.println("");
 	
+		
 	}
 	
 	}
